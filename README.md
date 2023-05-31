@@ -2,10 +2,10 @@
 
 ### Начало работы:
 
-1. Инициализация. Нажмите Fork на странице https://github.com/minskitlandia/course
-2. У вас в аккаунте fork появится тут  https://github.com/Ваш_логин/course
+1. Инициализация. Нажмите Fork на странице https://github.com/Naumenkosergey/lessons-brother
+2. У вас в аккаунте fork появится тут  https://github.com/Ваш_логин/lessons-brother
 3. Выберите в IDEA VCS -> Checkout version control -> GitHub и затем:
- * укажите ссылку на Ваш fork https://github.com/Ваш_логин/course
+ * укажите ссылку на Ваш fork https://github.com/Ваш_логин/lessons-brother
  * выберите путь к папке проекта (без русских букв и пробелов);
 
 [comment]: <> ( * после создания проекта один раз выполните команду Git -> Rebase my GitHub fork)
@@ -39,7 +39,7 @@
 
 # Если все поломалось!
 
-1. **Скопируйте** свою папку из src/by/itland/itjava в отдельное место на диске.
+1. **Скопируйте** свою папку из src/Ваше имя в отдельное место на диске.
  * найти свою папку на диске можно выделив ее в дереве папок в IDEA. Далее, правая кнопка -> Show in Explorer.
 2. Удалите fork из своего аккаунта github (откройте форк на сайте, выберите Setting-Delete this repository)
 3. Выполните всю последовательность из шапки (см. <b>Начало работы</b>).
