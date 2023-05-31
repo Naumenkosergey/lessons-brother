@@ -1,0 +1,42 @@
+Создать класс ArrayIntCalc в нем реализовать следующее задачи:
+
+Задание 0. Написать метод static void printArray(int[] array), для вывода массива (Можно не делать, НО....)
+
+Задание 1. Написать метод public static void modificationArrayMulNumber(int[] array, int n),
+           который умножает каждый элемент на n.
+
+Задание 2. Написать метод public static double findAverage (int[] array), который возвращает среднее арифметическое
+           значение (САЗ) массива.
+
+Задание 3. Написать метод public static void modificationGreaterAverage(int[] array, int n, double average),
+           который прибавляет к элементам большим САЗ значение n.
+
+Задание 4. Написать метод public static void modificationLessAverage(int[] array, double average),
+           который поменяет знак на противоположный у элементов меньших САЗ.
+
+Задание 5. Написать метод public static int findMin (int[] array), который осуществляет поиск минимального элемента массива.
+
+Задание 6. Написать метод public static int findMax (int[] array), который осуществляет поиск максимального элемента массива
+
+Задание 7. Написать метод public static int findMinIndex(int[] array), который возвращает индекс минимального элемента массива
+
+Задание 8. Написать метод public static int findMaxIndex(int[] array), который возвращает индекс максимального элемента массива
+
+Задание 9. Написать метод public static void changeMaxMinElement(int[] array), который поменяет местами максимальный
+           и минимальные элементы массива
+
+Задание 10. Написать метод public static void printEven(int[] array), который печатает все четные числа массива
+
+Задание 11. Написать метод public static void printOdd(int[] array), который печатает все нечетные числа массива
+
+Задание 12. Написать метод public static boolean findElement(int[] array, int n), который проверяет есть ли элемент n в массиве.
+
+Задание 13. Написать метод public static int indexElement(int[] array, int n), который возвращает индекс искомого элемента n,
+            если элемент не найден вернуть -1.
+
+
+Задание 14. Создать класс Runner, в котором и реализовать функцию main для тестирования работы класса ArrayIntCalc
+            Создать целочисленный массив, размерностью указанной пользователем, заполнить массив ручками.
+            Вызвать методы из класса ArrayIntCalc.
+
+
