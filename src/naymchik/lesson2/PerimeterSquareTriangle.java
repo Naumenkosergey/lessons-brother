@@ -1,4 +1,4 @@
-package naymchik;
+package naymchik.lesson2;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package naymchik;
+package naymchik.lesson2;
 
 
 import org.junit.Test;
@@ -33,10 +33,10 @@ public class TestItJava02 {
     @Test
     public void testExample3(){
         System.out.println("Проверка третьего примера");
-        run("5\n-2").include("3.702");
+        run("5\n-2").include("3,702");
         run("1\n1").include("Infinity");
-        run("4\n6").include("63.408");
-        run("8\n0").include("0.017");
+        run("4\n6").include("63,408");
+        run("8\n0").include("0,017");
     }
 
     @Test
@@ -54,10 +54,10 @@ public class TestItJava02 {
     @Test
     public void testAreaCircle(){
         System.out.println("Тест окружности");
-        run("15").include("Площадь круга:  17.905. Длина окружности: 15.0");
-        run("10").include("Площадь круга:  7.958. Длина окружности: 10.0");
-        run("20").include("Площадь круга:  31.831. Длина окружности: 20.0");
-        run("5").include("Площадь круга:  1.989. Длина окружности: 5.0");
+        run("15").include("Площадь круга:  17,905. Длина окружности: 15,0");
+        run("10").include("Площадь круга:  7,958. Длина окружности: 10,0");
+        run("20").include("Площадь круга:  31,831. Длина окружности: 20,0");
+        run("5").include("Площадь круга:  1,989. Длина окружности: 5,0");
     }
 
     @Test

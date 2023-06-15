@@ -1,4 +1,4 @@
-package materials.lesson04;
+package naymchik.lesson4;
 
 import org.junit.Test;
 
@@ -6,8 +6,7 @@ import java.io.*;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 @SuppressWarnings("all")
 
@@ -22,6 +21,10 @@ public class TestItJava04 {
         run("1").include("понедельник");
         run("2").include("вторник");
         run("3").include("среда");
+        run("4").include("четверг");
+        run("5").include("пятница");
+        run("6").include("суббота");
+        run("7").include("воскресенье");
     }
 
     @Test
