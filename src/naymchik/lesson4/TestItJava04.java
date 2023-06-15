@@ -41,7 +41,7 @@ public class TestItJava04 {
     @Test
     public void testNumberDayLeapYear() throws Exception {
         System.out.println("\n\nNumberDayLeapYear");
-        checkMethod("NumberDayLeapYear", "static getNUmberDay", int.class, String.class);
+        checkMethod("NumberDayLeapYear", "static getNumberDay", int.class, String.class);
         run("март\n24").include("84");
         run("ДеКаБрЬ\n31").include("366");
         run("Сентябрь\n12").include("256");
@@ -51,7 +51,7 @@ public class TestItJava04 {
     @Test
     public void testNumberDayNoLeapYear() throws Exception {
         System.out.println("\n\nNumberDayLeapYear");
-        checkMethod("NumberDayLeapYear", "static getNUmberDay", int.class, String.class);
+        checkMethod("NumberDayLeapYear", "static getNumberDay", int.class, String.class);
         run("март\n24").include("83");
         run("ДеКаБрЬ\n31").include("365");
         run("Сентябрь\n12").include("255");
