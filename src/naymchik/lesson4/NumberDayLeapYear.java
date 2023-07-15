@@ -15,7 +15,7 @@ public class NumberDayLeapYear {
         Scanner scan = new Scanner(System.in);
         String month = scan.next().toLowerCase();
         int day = scan.nextInt();
-        System.out.println(getNumberDay(day,month));
+        System.out.println(getNumberDay(day, month));
 
 //        String month = "ЯнваРь";
 //        int day = 15;
