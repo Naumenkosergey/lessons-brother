@@ -5,9 +5,6 @@ package naymchik.lesson9;
  * если строка начинается и заканчивается этим словом. Регистр неважен
  */
 
-
-//import java.util.Locale;
-
 import java.util.Scanner;
 
 public class CheckLine {
@@ -22,5 +19,4 @@ public class CheckLine {
     private static boolean checkStroku(String str, String str1) {
         return str.toLowerCase().startsWith(str1.toLowerCase()) && str.toLowerCase().endsWith(str1.toLowerCase());
     }
-
 }

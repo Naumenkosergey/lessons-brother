@@ -21,7 +21,6 @@ public class LeapYearWithMethod {
         Scanner scan = new Scanner(System.in);
         int year = scan.nextInt();
         System.out.println(leapYear(year));
-
     }
 
     public static String leapYear(int year) {

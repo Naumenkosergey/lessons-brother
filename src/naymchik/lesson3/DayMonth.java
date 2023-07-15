@@ -14,10 +14,9 @@ import java.util.Scanner;
  * Пример: ввод: 15 8
  * вывод: Неправильное значение месяца и дня
  */
-//Ruturn null
-
 public class DayMonth {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         byte month = scan.nextByte();
         byte day = scan.nextByte();
@@ -32,7 +31,6 @@ public class DayMonth {
             case 7 -> "воскресенье";
             default -> null;
         };
-
 
         String d = switch (month) {
             case 1 -> "Январь";
@@ -50,17 +48,14 @@ public class DayMonth {
             default -> null;
         };
 
-
         if (p == null && d == null) {
             System.out.printf("%s\n", "Неправильное значение месяца и дня");
         } else if (d == null) {
             System.out.printf("%s\n", "Неправильное значение месяца");
-        } else if (p == null ) {
+        } else if (p == null) {
             System.out.printf("%s\n", "Неправильное значение дня");
         } else {
             System.out.printf("%s - %s\n", d, p);
         }
-
     }
-
 }

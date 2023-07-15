@@ -17,34 +17,9 @@ public class Price {
 
         Scanner scan = new Scanner(System.in);
         double tsena = scan.nextDouble();
-
-//        double tsena = 85.85;
         int tsenaRubli = (int) tsena;
-
         int tsenaKopejki = (int) (Math.round(tsena * 100)) % 100;
 
-
-//        if (sklonenie((int) tsena%100) == 3){
-//            if (sklonenie(((int) tsena%100)%10)==3){
-//                System.out.println("Ошибка");
-//            } else if (sklonenie(((int) tsena%100)%10)==2) {
-//                System.out.println(tsenaRubli + " рублей");
-//            } else if (sklonenie(((int) tsena%100)%10)==1) {
-//                System.out.println(tsenaRubli + " рубля");
-//            } else if (sklonenie(((int) tsena%100)%10)==0) {
-//                System.out.println(tsenaRubli + " рубль");
-//            } else {
-//                System.out.println("Ошибка");
-//            }
-//        } else if (sklonenie((int) tsena%100) == 2) {
-//            System.out.println(tsenaRubli + " рублей");
-//        } else if (sklonenie((int) tsena%100) == 1) {
-//            System.out.println(tsenaRubli + " рубля");
-//        } else if (sklonenie((int) tsena%100) == 0) {
-//            System.out.println(tsenaRubli + " рубль");
-//        } else {
-//            System.out.println("Ошибка");
-//        }
         String rub;
         if (sklonenie((int) tsena % 100) == 3) {
             if (sklonenie(((int) tsena % 100) % 10) == 3) {
@@ -68,14 +43,6 @@ public class Price {
             rub = "Ошибка";
         }
 
-
-//        System.out.printf("%.0f\n", Math.floor(tsena));
-//        System.out.printf("%.0f\n", tsena * 100 % 100);
-
-
-//        int rub = sklonenie(tsenaRubli);
-//        int kopejki = sklonenie(tsenaKopejki);
-
         String kop;
         if (sklonenie(tsenaKopejki) == 3) {
             byte x1 = sklonenie(tsenaKopejki % 10);
@@ -97,29 +64,7 @@ public class Price {
         } else {
             kop = "Ошибка";
         }
-
-
-//        if (sklonenie(tsenaKopejki) == 3) {
-//            if (sklonenie(tsenaKopejki % 10) == 3) {
-//                System.out.println("Ошибка");
-//            } else if (sklonenie(tsenaKopejki % 10) == 2) {
-//                System.out.println(tsenaKopejki + " копеек");
-//            } else if (sklonenie(tsenaKopejki % 10) == 1) {
-//                System.out.println(tsenaKopejki + " копейки");
-//            } else {
-//                System.out.println(tsenaKopejki + " копейка");
-//            }
-//        } else if (sklonenie(tsenaKopejki) == 2) {
-//            System.out.println(tsenaKopejki + " копеек");
-//        } else if (sklonenie(tsenaKopejki) == 1) {
-//            System.out.println(tsenaKopejki + " копейки");
-//        } else if (sklonenie(tsenaKopejki)== 0){
-//            System.out.println(tsenaKopejki + " копейка");
-//        } else {
-//            System.out.println("Ошибка");
-//        }
         System.out.printf("%2s %s %2s %s", tsenaRubli, rub, tsenaKopejki, kop);
-
     }
 
     private static byte sklonenie(int a) {
@@ -132,5 +77,4 @@ public class Price {
         };
         return variant;
     }
-
 }

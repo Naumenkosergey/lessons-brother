@@ -15,7 +15,6 @@ public class NumberDayNoLeapYear {
         String month = scan.next().toLowerCase();
         int day = scan.nextInt();
         System.out.println(getNumberDay(day, month));
-
     }
 
     public static int getNumberDay(int day, String month) {
@@ -32,7 +31,6 @@ public class NumberDayNoLeapYear {
             case "ноябрь" -> 31 * 6 + 30 * 3 + 28;
             case "декабрь" -> 31 * 6 + 30 * 4 + 28;
             default -> 0;
-
         };
         return day + m;
     }

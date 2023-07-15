@@ -21,8 +21,6 @@ public class SumOfDigits {
         if (value >= 1000 && value < 10000 || value <= -1000 && value > -10000) {
             System.out.println(summaChisel(value));
         } else System.out.println("Число не четырехзначное");
-
-
     }
 
     public static int summaChisel(int value) {
@@ -42,9 +40,7 @@ public class SumOfDigits {
             }
             summ += value % 10;
             value /= 10;
-
         }
-
         return summ;
     }
 }

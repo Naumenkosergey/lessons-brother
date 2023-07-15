@@ -52,31 +52,23 @@ public class ThimbleGame {
         return stavka;
     }
 
-
     private static int getStavka(int bank) {
         int stavka;
         do {
-        System.out.println("Сделайте ставку");
+            System.out.println("Сделайте ставку");
             stavka = returnExpression();
             if (stavka < 0 || bank < stavka) {
                 System.out.printf("Ставка не принята, у Вас осталось %d едениц\n", bank);
-//                System.out.println("Сделайте ставку");
-//                stavka = returnExpression();
             } else if (stavka > 0) {
                 System.out.printf("Ставка в %d едениц принята\n", stavka);
             } else {
                 break;
             }
-
         } while (stavka > bank || stavka < 0);
-
         return stavka;
     }
-
 
     private static int returnExpression() {
         return new Scanner(System.in).nextInt();
     }
-
-
 }

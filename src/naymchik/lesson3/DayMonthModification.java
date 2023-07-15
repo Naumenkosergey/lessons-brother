@@ -11,19 +11,12 @@ import java.util.Scanner;
  * Пример: ввод: 4 651
  * вывод: апрель - воскресенье
  */
-
-
 public class DayMonthModification {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
         short month = scan.nextShort();
         short day = scan.nextShort();
-
-//        short month = 15;
-//        short day = -9;
-
-
 
         String d;
         d = switch (day % 7) {
@@ -63,7 +56,5 @@ public class DayMonthModification {
         } else {
             System.out.printf("%s - %s\n", m, d);
         }
-
-
     }
 }

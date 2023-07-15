@@ -17,7 +17,6 @@ public class PrintNumber {
         int n = scan.nextInt();
         int k = scan.nextInt();
         int step = scan.nextInt();
-
         printNumberFromZeroToTenInclude(n);
         System.out.println();
         printNumberFromTenToZeroExclude(n);
@@ -39,7 +38,6 @@ public class PrintNumber {
         }
     }
 
-
     static void printNumberFromTenToZeroExclude(int n) {
         for (int i = n; i > 0; i--) {
             System.out.print(i + " ");
@@ -51,9 +49,7 @@ public class PrintNumber {
             System.out.print(n + " ");
             n--;
         }
-
     }
-
 
     static void printNumberFromNToKStep(int n, int k, int step) {
         for (int i = n; i <= k; i += step) {

@@ -14,9 +14,6 @@ import java.util.Arrays;
  */
 public class ArrayIntCalc {
 
-    //    Задание 14. Создать класс Runner, в котором и реализовать функцию main для тестирования работы класса ArrayIntCalc
-//            Создать целочисленный массив, размерностью указанной пользователем, заполнить массив ручками.
-//            Вызвать методы из класса ArrayIntCalc.
     public static void main(String[] args) {
 
         int[] arr = {1, 2, 4, 5, 6, 7, 8, 9, 10, 11};
@@ -27,7 +24,6 @@ public class ArrayIntCalc {
         modificationArrayMulNumber(arr, n);
         System.out.println(" - массив с произведением на n");
         System.out.println(findAverage(arr));
-//        printArray(modificationGreaterAverage(Arrays.copyOf(arr, arr.length), n, findAverage(arr)));
         System.out.println(" - массив с произведением элементов <САЗ на n");
         modificationLessAverage(arr, findAverage(arr));
         System.out.println(" - массив с произведением элементов >САЗ на -1");
@@ -43,10 +39,7 @@ public class ArrayIntCalc {
         System.out.println(" - нечетные цифры массива");
         System.out.println(findElement(arr, n) + " - проверяет в массиве значение n");
         System.out.println(indexElement(arr, n) + " - возвращает индекс массива со значение n");
-
-
         printArray(arr);
-
 
     }
 
@@ -55,11 +48,6 @@ public class ArrayIntCalc {
         for (int j : array) {
             System.out.print(j + " ");
         }
-
-//        for (int i = 0; i < array.length; i++) {
-//            System.out.print(array[i] + " ");
-//
-//        }
     }
 
     //Задание 1. Написать метод public static void modificationArrayMulNumber(int[] array, int n),
@@ -67,7 +55,6 @@ public class ArrayIntCalc {
     public static void modificationArrayMulNumber(int[] array, int n) {
         for (int i = 0; i < array.length; i++) {
             array[i] *= n;
-
         }
         printArray(array);
     }
@@ -179,8 +166,7 @@ public class ArrayIntCalc {
         }
     }
 
-//    Задание 12. Написать метод public static boolean findElement(int[] array, int n), который проверяет есть ли элемент n в массиве.
-
+    //    Задание 12. Написать метод public static boolean findElement(int[] array, int n), который проверяет есть ли элемент n в массиве.
     public static boolean findElement(int[] array, int n) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == n) {
@@ -201,6 +187,5 @@ public class ArrayIntCalc {
         }
         return index;
     }
-
 }
 

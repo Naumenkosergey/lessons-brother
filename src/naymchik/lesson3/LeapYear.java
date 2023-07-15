@@ -23,22 +23,11 @@ public class LeapYear {
         if (value < 0) {
             System.out.println("Год не может быть отрицательным");
         } else {
-
             System.out.println(checkYear(value));
         }
-
     }
 
-    //    public static void checkYear(int value) {
-//        if (value % 400 == 0 || (value % 4 == 0 && value % 100 != 0)){
-//            System.out.println("Високосный");
-//        } else {
-//            System.out.println("Невисокосный");
-//        }
-//    }
     public static String checkYear(int value) {
         return (value % 400 == 0 || (value % 4 == 0 && value % 100 != 0)) ? "Високосный" : "Невисокосный";
-
     }
-
 }

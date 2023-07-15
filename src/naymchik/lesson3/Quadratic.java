@@ -9,21 +9,19 @@ import java.util.Scanner;
  */
 public class Quadratic {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         double a = scan.nextInt();
         double b = scan.nextInt();
         double c = scan.nextInt();
-
         double dec = Math.pow(b, 2) - 4 * a * c;
+
         if (dec < 0) {
             System.out.printf("%s\n", "Уравнение не имеет корней");
         } else {
             double x1 = (-b + Math.pow(dec, 0.5)) / (2 * a);
             double x2 = (-b - Math.pow(dec, 0.5)) / (2 * a);
             System.out.printf("x1=%.2f; x2=%.2f", x1, x2);
-
         }
-
-
     }
 }

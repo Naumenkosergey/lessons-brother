@@ -19,26 +19,17 @@ public class CalcNumber {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         int k = scan.nextInt();
-
-//        int n = 2;
-//        int k = 5;
         System.out.println("Сумма: " + sumSequence(n, k));
-//        sumSequenceWhile(n, k);
         System.out.println("Произведение: " + mulSequence(n, k));
-//        System.out.println(mulSequenceFor(n, k));
         System.out.println(+n + "! = " + factorial(n));
-//        System.out.println(factorialWhile(n));
         System.out.println("Сумма четных: " + sumEven(n, k));
-//        System.out.println(sumEvenFor(n, k));
         System.out.println("Сумма нечетных: " + sumOdd(n, k));
     }
-
 
     static int sumSequence(int n, int k) {
         int summ;
         for (summ = 0; n <= k; n++) {
             summ += n;
-
         }
         return summ;
     }
@@ -73,7 +64,6 @@ public class CalcNumber {
         long factor = 1;
         for (int i = n; i >= 1; i--) {
             factor *= i;
-
         }
         return factor;
     }
@@ -85,7 +75,6 @@ public class CalcNumber {
             n--;
         }
         return factorial;
-
     }
 
     static int sumEven(int n, int k) {
@@ -108,7 +97,6 @@ public class CalcNumber {
                 continue;
             }
             summ += n;
-
         }
         return summ;
     }

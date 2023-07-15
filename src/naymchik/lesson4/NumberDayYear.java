@@ -16,20 +16,21 @@ public class NumberDayYear {
         int day = Math.abs(scan.nextInt());
         String month = scan.next().toLowerCase();
         int year = Math.abs(scan.nextInt());
-
         LeapYearWithMethod.leapYear(year);
-        if (!checkMonth(month)){
+
+        if (!checkMonth(month)) {
             System.out.println("Ошибка");
-        }else {
+        } else {
             System.out.println(LeapYearWithMethod.leapYear(year).equals("Високосный")
                     ? NumberDayLeapYear.getNumberDay(day, month)
                     : NumberDayNoLeapYear.getNumberDay(day, month));
         }
     }
 
-    private static boolean checkMonth(String month){
-        return switch (month){
-            case "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь" -> true;
+    private static boolean checkMonth(String month) {
+        return switch (month) {
+            case "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь" ->
+                    true;
             default -> false;
         };
     }

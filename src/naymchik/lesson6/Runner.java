@@ -1,4 +1,5 @@
 package naymchik.lesson6;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -20,7 +21,8 @@ public class Runner {
         ArrayIntCalc.printArray(arr);
         System.out.println("\nМассив после первого изменения");
         ArrayIntCalc.modificationArrayMulNumber(arr, n);
-        System.out.printf(Locale.ENGLISH,"\nСреднее арифметическое значение массива: %.1f", ArrayIntCalc.findAverage(arr));
+        System.out.printf(Locale.ENGLISH, "\nСреднее арифметическое значение массива: %.1f",
+                ArrayIntCalc.findAverage(arr));
         System.out.println("\nМассив после второго изменения");
         ArrayIntCalc.modificationGreaterAverage(arr, n, ArrayIntCalc.findAverage(arr));
         System.out.println("\nМассив после третьего изменения");

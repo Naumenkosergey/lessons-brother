@@ -12,7 +12,6 @@ public class SimpleNumber {
         Scanner scan = new Scanner(System.in);
         int value = scan.nextInt();
         returnPrimeNumber(value);
-//        returnPrimeNumberFor(value);
     }
 
     public static void returnPrimeNumber(int value) {
@@ -21,7 +20,7 @@ public class SimpleNumber {
             if (a == Math.abs(value)) {
                 System.out.println("Число " + value + " простое");
                 break;
-            } else if ( Math.abs(value) % a == 0) {
+            } else if (Math.abs(value) % a == 0) {
                 System.out.println("Число " + value + " составное");
                 break;
             } else {
