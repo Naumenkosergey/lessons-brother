@@ -20,9 +20,7 @@ public class LeapYearWithMethod {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int year = scan.nextInt();
-//        int year = 2000;
         System.out.println(leapYear(year));
-
 
     }
 
