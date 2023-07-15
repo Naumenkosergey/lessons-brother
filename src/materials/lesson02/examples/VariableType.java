@@ -19,6 +19,7 @@ public class VariableType {
 
         final int CONSTANT = 5;
 
+
         System.out.println(byteNumber + " " + shortNumber + " " + intNumber + " " + longNumber + " " + floatNumber + " " +
                 doubleNumber + " " + charNumber + " " + symbols + " " + flag + " " + CONSTANT);
         System.out.print(byteNumber + "\n" + shortNumber + "\n" + intNumber + "\n" + longNumber + "\n" + floatNumber + "\n" +
