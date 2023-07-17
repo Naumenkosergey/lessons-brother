@@ -9,8 +9,6 @@ import java.util.Scanner;
  */
 public class Day {
     public static void main(String[] args) {
-//        int a = 4;
-//        getNameDay(a);
         Scanner scan = new Scanner(System.in);
         int day = scan.nextInt();
         printDay(day);

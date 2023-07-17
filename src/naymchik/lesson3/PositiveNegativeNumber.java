@@ -14,16 +14,12 @@ public class PositiveNegativeNumber {
         Scanner scan = new Scanner(System.in);
         int namber1 = scan.nextInt();
 
-
         if (namber1 > 0) {
             System.out.println("Число положительное");
-        }
-        else if (namber1 < 0) {
+        } else if (namber1 < 0) {
             System.out.println("Число отрицательное");
-        }
-        else{
+        } else {
             System.out.println("Число ноль");
         }
-
     }
 }

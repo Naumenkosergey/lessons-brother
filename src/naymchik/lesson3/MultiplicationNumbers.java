@@ -25,12 +25,7 @@ public class MultiplicationNumbers {
         Scanner scan = new Scanner(System.in);
         byte a = scan.nextByte();
         byte b = scan.nextByte();
-//        byte c = scan.nextByte();
-//
-//        byte a = 4;
-//        byte b = 3;
         int c = a * b;
-
 
         if (a < 0 || a > 9 || b < 0 || b > 9) {
             System.out.println("нужно вводить толко цифры, т.е. значения от 0 до 10");
@@ -41,12 +36,9 @@ public class MultiplicationNumbers {
         } else {
             System.out.printf("%s умножить на %s равно %s", chislo(a), chislo(b), chislo(c));
         }
-
     }
 
-
     public static String chislo(int a) {
-
 
         return switch (a) {
             case 0 -> "ноль";

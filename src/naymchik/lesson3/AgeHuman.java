@@ -19,17 +19,6 @@ public class AgeHuman {
         String name = scan.next();
         byte year = scan.nextByte();
 
-//        String name = "Юрий";
-//        int year = 73;
-
-
-//        int year;
-//        if (year1 > 99) {
-//            year = year1 - 100;
-//        } else {
-//           year = year1;
-//        }
-
         if (year > 4 && year < 21 || year % 10 > 4 && year % 10 < 10 || year % 10 == 0) {
             System.out.printf("%s %d %s", name, year, "лет");
         } else if (year % 10 == 1) {
@@ -39,9 +28,5 @@ public class AgeHuman {
         } else {
             System.err.println("ошибка");
         }
-
-
     }
-
-
 }

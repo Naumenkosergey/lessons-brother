@@ -11,6 +11,6 @@ public class Example1 {
         System.out.println("Введите значение y");
         int y = scan.nextInt();
         System.out.println("Вы ввели значение y=" + y);
-        System.out.println("3^(-x)-cosx+sin(2xy)=" + (Math.pow(3,-(x))-Math.cos(x)+Math.sin(2*x*y)));
+        System.out.println("3^(-x)-cosx+sin(2xy)=" + (Math.pow(3, -(x)) - Math.cos(x) + Math.sin(2 * x * y)));
     }
 }

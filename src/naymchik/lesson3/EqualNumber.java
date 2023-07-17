@@ -24,25 +24,14 @@ public class EqualNumber {
             sravnenie(value1, value2);
             sravnenie(value1, value3);
             sravnenie(value2, value3);
-
-
-//            if (value1 == value2) {
-//                System.out.printf("%d %d\n", value1, value2);
-//            } else if (value2 == value3) {
-//                System.out.printf("%d %d\n", value2, value3);
-//            } else
-//                System.out.printf("%d %d\n", value1, value3);
-
-        }else
+        } else
             System.out.println("Одинаковых чисел нет");
     }
 
-    static void sravnenie (int a, int b){
-        if (a == b){
+    static void sravnenie(int a, int b) {
+        if (a == b) {
             System.out.printf("%d %d\n", a, b);
         }
     }
-
-
 }
 

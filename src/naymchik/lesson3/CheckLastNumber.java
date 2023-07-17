@@ -10,12 +10,10 @@ import java.util.Scanner;
  */
 public class CheckLastNumber {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         byte k = scan.nextByte();
-
-//        int n = -28912;
-//        byte k = 2;
 
         if (k < 0 || k > 9) {
             System.out.println("Число к не может быть отрицательным и больше 9");
@@ -24,7 +22,5 @@ public class CheckLastNumber {
         } else {
             System.out.printf("Цифра %d не является последней числа %d ", k, n);
         }
-
-
     }
 }

@@ -14,21 +14,7 @@ public class NumberDayYear {
         int day = Math.abs(scan.nextInt());
         int mouht = Math.abs(scan.nextInt());
         int year = Math.abs(scan.nextInt());
-
-//        int year = 2000;
-//        int mouht = 3;
-//        int day = 12;
-
-
         byte k = (LeapYear.checkYear(year).equals("Високосный")) ? (byte) 1 : 0;
-
-
-//        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-//            k = 1;
-//        } else {
-//            k = 0;
-//        }
-
 
         int colichestvoDnei = switch (mouht) {
             case 1 -> 0;
@@ -46,7 +32,5 @@ public class NumberDayYear {
             default -> 0;
         };
         System.out.println(colichestvoDnei + day);
-
     }
-
 }

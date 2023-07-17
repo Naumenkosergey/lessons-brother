@@ -28,7 +28,6 @@ public class IharBot {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-//        System.out.println("Какую вы хотите зарплату в $$$?");
         double summa = scan.nextDouble();
 
         if (summa < 300 || summa > 3000) {
@@ -36,10 +35,7 @@ public class IharBot {
         } else {
             System.out.println("Какой месяц вас интересует?");
         }
-
         int month = scan.nextInt();
-
-
 
         String d = switch (month) {
             case 1 -> "январь";
@@ -54,13 +50,8 @@ public class IharBot {
             case 10 -> "октябрь";
             case 11 -> "ноябрь";
             case 12 -> "декабрь";
-//            default -> "null";
             default -> String.format("За месяц %d начислено $0,00", month);
         };
-
-
-
-/** пересмотреть порядок условй*/
 
         if (month < 1 || month > 12) {
             System.out.println(d);
@@ -69,10 +60,6 @@ public class IharBot {
         } else {
             System.out.printf("За месяц %s начислено $%.2f", d, summa * 1.5);
         }
-
-
     }
-
-
 }
 
