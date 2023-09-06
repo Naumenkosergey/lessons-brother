@@ -46,6 +46,6 @@ public class Triangle {
 
     public double aria() {
         double p = this.perimeter() / 2;
-        return Math.sqrt((p - a.distance(b) * (p - b.distance(c)) * (p - a.distance(c))));
+        return Math.sqrt(p * (p - a.distance(b)) * (p - b.distance(c)) * (p - a.distance(c)));
     }
 }

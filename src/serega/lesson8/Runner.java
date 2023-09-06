@@ -33,5 +33,19 @@ public class Runner {
 
         System.out.println(polkan.danger(tuz));
         System.out.println(tuz.danger(polkan));
+
+        Cat[] cats = new Cat[3];
+        cats = generateCats(3);
+        for (Cat cat1 : cats) {
+            System.out.println(cat1);
+        }
+    }
+
+    private static Cat[] generateCats(int i) {
+        Cat[] cats = new Cat[3];
+        for (int j = 0; j < i; j++) {
+            cats[j] = new Cat("cat"+j,(int)(Math.random()*10));
+        }
+        return cats;
     }
 }

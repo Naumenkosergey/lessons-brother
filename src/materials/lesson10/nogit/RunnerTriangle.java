@@ -7,5 +7,7 @@ public class RunnerTriangle {
         Point b = new Point(0, 3);
         Point c = new Point(4, 0);
         Triangle triangle = new Triangle(a, b, c);
+        System.out.println(triangle.perimeter());
+        System.out.println(triangle.aria());
     }
 }
