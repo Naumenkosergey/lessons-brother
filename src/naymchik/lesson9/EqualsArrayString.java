@@ -14,5 +14,7 @@ public class EqualsArrayString {
         String [] str1Array = str1.split(" ");
         String [] str2Array = str2.split(" ");
 
+
+
     }
 }

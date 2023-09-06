@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class ReplaceSmile {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String stroka = scan.nextLine();
+        String stroka = Poem.text;
         System.out.println(stroka.replace(":(", ":)"));
     }
 }

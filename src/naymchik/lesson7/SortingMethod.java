@@ -4,7 +4,7 @@ public class SortingMethod {
     public static long counterBobble;
     public static long changeBobble;
 
-    public static long[] bubbleSort(int[] array) {
+    public static void bubbleSort(int[] array) {
         //        итерация
 //        counterBobble = 0;
 //        перестановка
@@ -20,7 +20,6 @@ public class SortingMethod {
                 }
             }
         }
-        return new long[]{changeBobble, counterBobble};
     }
 
 
@@ -124,11 +123,10 @@ public class SortingMethod {
             counterMerge++;
             if (leftArr[i] <= rightArr[j]) {
                 array[k++] = leftArr[i++];
-                changeMerge++;
             } else {
                 array[k++] = rightArr[j++];
-                changeMerge++;
             }
+            changeMerge++;
         }
         while (i < sizeLeft) {
             counterMerge++;
@@ -146,18 +144,18 @@ public class SortingMethod {
             return;
         int middle = size / 2;
         int[] leftArr = new int[middle];
-        int[] righArr = new int[size - middle];
+        int[] rightArr = new int[size - middle];
         for (int i = 0; i < middle; i++) {
             leftArr[i] = array[i];
             counterMerge++;
         }
         for (int i = middle; i < size; i++) {
-            righArr[i - middle] = array[i];
+            rightArr[i - middle] = array[i];
             counterMerge++;
         }
         mergeSort(leftArr, middle);
-        mergeSort(righArr, size - middle);
-        merge(array, leftArr, righArr, middle, size - middle);
+        mergeSort(rightArr, size - middle);
+        merge(array, leftArr, rightArr, middle, size - middle);
     }
 
 

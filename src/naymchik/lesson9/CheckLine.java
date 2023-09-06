@@ -10,8 +10,9 @@ import java.util.Scanner;
 public class CheckLine {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String stroka = scan.nextLine();
-        String slovo = scan.nextLine();
+//        String stroka = scan.nextLine();
+        String stroka = "Юра магистр технических юра";
+        String slovo = "Юра";
         System.out.println(checkStroku(stroka, slovo));
 
     }
