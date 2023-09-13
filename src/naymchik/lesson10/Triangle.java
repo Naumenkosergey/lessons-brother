@@ -56,6 +56,7 @@ public class Triangle {
         Point b = new Point(0, 20);
         Point c = new Point(-10, 20);
         Triangle ABC = new Triangle(a, b, c);
+        Point d = new Point(12,54);
 
 
     }
