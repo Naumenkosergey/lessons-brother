@@ -1,5 +1,7 @@
 package materials.lesson15;
 
+import serega.lesson8.Dog;
+
 public class Runner {
     public static void main(String[] args) {
 

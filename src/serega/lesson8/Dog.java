@@ -1,6 +1,6 @@
 package serega.lesson8;
 
-public class Dog {
+public class Dog extends Number {
 
     String name;
     int age;
@@ -9,6 +9,26 @@ public class Dog {
 
     public Dog() {
 
+    }
+
+    @Override
+    public int intValue() {
+        return 0;
+    }
+
+    @Override
+    public long longValue() {
+        return 0;
+    }
+
+    @Override
+    public float floatValue() {
+        return 0;
+    }
+
+    @Override
+    public double doubleValue() {
+        return 0;
     }
 
     public Dog(String name, int age) {
